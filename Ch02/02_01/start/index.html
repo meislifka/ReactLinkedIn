@@ -15,18 +15,13 @@
   <body>
     <div id ="root"></div>
     <script type="Text/javascript">
-      let ul = React.createElement(
-        "h1",
-        {style: {color:"blue"}},
-          React.createElement("li",null,"Monday"),
-          React.createElement("li",null,"Tuesday"),
-          React.createElement("li",null,"Wednesday"),
-          React.createElement("li",null,"Thursday"),
-          React.createElement("li",null,"Friday")
-      );
       ReactDOM.render(
-          ul,
-          document.getElementById("root")
+          <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+          </ul>,
+          document.getById("root")
         
       );
     </script>
