@@ -1,6 +1,7 @@
 import "./App.css";
 //desturcturing, grabbing by its key
 
+//array destructuring - assinging a name based on position in the array
 const [firstCity,second] = ["Tokyo","Tahoe","Villanova"]
 
 console.log(firstCity);
