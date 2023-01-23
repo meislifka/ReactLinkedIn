@@ -1,5 +1,5 @@
 import "./App.css";
-import { useRef } from "react";
+import { useRef } from "react"; //reaches out to UI element and gets values
 
 function App() {
   const txtTitle = useRef();
