@@ -1,38 +1,31 @@
 import "./App.css";
+//react router allows movement form page to page
 
-const tahoe_peaks = [
-  { name: "Freel", elevation: 10891 },
-  { name: "Monument", elevation: 10067 },
-  { name: "Pyramid", elevation: 9983 },
-  { name: "Tallac", elevation: 9735 }
-];
-
-function List({ data, renderItem, renderEmpty }) {
-  return !data.length ? (
-    renderEmpty
-  ) : (
-    <ul>
-      {data.map((item) => (
-        <li key={item.name}>
-          {renderItem(item)}
-        </li>
-      ))}
-    </ul>
-  );
+function Home(){
+  return(
+    <div>
+      <h1> My Website</h1>
+    </div>
+  )
 }
 
+function About(){
+  return(
+    <div>
+      <h1> About us</h1>
+    </div>
+  )
+}
+function Contact(){
+  return(
+    <div>
+      <h1> Contact Us</h1>
+    </div>
+  )
+}
 function App() {
-  return (
-    <List
-      data={tahoe_peaks}
-      renderEmpty={<p>This list is empty</p>}
-      renderItem={(item) => (
-        <>
-          {item.name} - {item.elevation} ft.
-        </>
-      )}
-    />
-  );
+  return<Home />
+  return <h1>App </h1>
 }
 
 export default App;
